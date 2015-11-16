@@ -1,11 +1,22 @@
+//
+//    Saints Row The Third Multiplayer
+// Copyright (C) 2015 All rights reserved
+//
+
 #pragma once
 
-#ifndef _WIN32
-#error O kurwa nie ten OS
+#ifndef OS_WINDOWS
+#	error Module wrapper is not designed to work under your operating system.
 #endif
 
 #include <Windows.h>
 
+#include "Debug.h"
+#include "System.h"
+
+/**
+ * Module loader wrapper class.
+ */
 template <typename INTERFACE_TYPE>
 class Module
 {
@@ -16,10 +27,12 @@ private:
 	//! DLL handle.
 	HMODULE			m_module;
 
-	typedef INTERFACE_TYPE *(*GetInterface_t)(void);
-	GetInterface_t	GetInterface;
+	//! GetInterface method.
+	typedef INTERFACE_TYPE *(*AllocInterface_t)(const char *const name, const unsigned version);
+	AllocInterface_t AllocInterface;
 
-	typedef void(*FreeInterface_t)(INTERFACE_TYPE *const interfacePtr);
+	//! FreeInterface method.
+	typedef void(*FreeInterface_t)(void);
 	FreeInterface_t	FreeInterface;
 
 public:
@@ -27,7 +40,7 @@ public:
 	~Module(void)
 	{
 		if (m_interface) {
-			FreeInterface(m_interface);
+			FreeInterface();
 		}
 
 		if (m_module) {
@@ -38,38 +51,23 @@ public:
 
 	INTERFACE_TYPE *Get(void)
 	{
-		if (m_interface)
+		if (m_interface) {
 			return m_interface;
-
-		if (!m_module) {
-			char dllPath[MAX_PATH] = { 0 };
-			char currentPath[MAX_PATH] = { 0 };
-
-			GetModuleFileName(GetModuleHandle("Core.dll"), currentPath, MAX_PATH);
-			for (unsigned int i = strlen(currentPath); i > 0; --i) {
-				if (currentPath[i] == '\\') {
-					currentPath[i] = '\0';
-					break;
-				}
-			}
-
-			sprintf(dllPath, "%s\\%s", currentPath, INTERFACE_TYPE::DLL_NAME);
-
-			m_module = LoadLibrary(dllPath);
-
-			// TOOD: m_module assert
 		}
 
-		GetInterface = reinterpret_cast<GetInterface_t>(GetProcAddress(m_module, "GetInterface"));
-		FreeInterface = reinterpret_cast<FreeInterface_t>(GetProcAddress(m_module, "FreeInterface"));
+		if (!m_module) {
+			PathString dllPath;
+			dllPath.Format("%s\\%s", System::GetCurrentModulePath().CStr(), INTERFACE_TYPE::DLL_NAME);
+			m_module = LoadLibrary(dllPath);
 
-		// TODO: Check GetInterface and FreeInterface
-		// TODO: Versioning mechanism.
+			ASSERT(m_module);
+		}
 
-		m_interface = GetInterface();
-		printf("%s:%u - DEBUG - ", __FILE__, __LINE__);
-		// TODO: Some checking? Maybe client should check it?
+		ASSERT(AllocInterface	= reinterpret_cast<AllocInterface_t>(GetProcAddress(m_module, "AllocInterface")));
+		ASSERT(FreeInterface	= reinterpret_cast<FreeInterface_t>(GetProcAddress(m_module, "FreeInterface")));
 
+		m_interface = AllocInterface(INTERFACE_TYPE::NAME, INTERFACE_TYPE::VERSION);
+		ASSERT(m_interface);
 		return m_interface;
 	}
 
