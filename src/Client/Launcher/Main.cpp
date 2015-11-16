@@ -92,7 +92,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	}
 	strcat(Path, "\\Core.dll");
 
-	// TODO: Check if core.dll exists.
+	if (GetFileAttributes(Path) == INVALID_FILE_ATTRIBUTES) {
+		MessageBox(NULL, "Cannot find Core.dll file.", "Error", MB_ICONERROR);
+		return 1;
+	}
 
 	if (!InjectDll(processInformation.hProcess, Path)) {
 		MessageBox(NULL, "Could not inject dll into the game process. Please try launching the game again.", "Fatal error", MB_ICONERROR);
