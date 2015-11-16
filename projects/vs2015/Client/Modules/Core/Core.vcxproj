@@ -25,6 +25,11 @@
     <ClInclude Include="..\..\..\..\..\src\Client\Modules\Core\Client.h" />
     <ClInclude Include="..\..\..\..\..\src\Client\Modules\Core\CorePCH.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Shared.vcxproj">
+      <Project>{ad832536-826d-4971-b107-cb0701e31ede}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C63953E8-3E3A-467B-8DE0-8F4454AA0710}</ProjectGuid>
     <RootNamespace>Client</RootNamespace>
@@ -89,7 +94,7 @@
       <PreprocessorDefinitions>DEBUG_BUILD;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>CorePCH.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -107,7 +112,7 @@
       <PreprocessorDefinitions>RELEASE_BUILD;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>CorePCH.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -127,7 +132,7 @@
       <PreprocessorDefinitions>DEV_RELEASE_BUILD;RELEASE_BUILD;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>CorePCH.h</PrecompiledHeaderFile>
     </ClCompile>

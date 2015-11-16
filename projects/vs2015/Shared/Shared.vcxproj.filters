@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Memory">
+      <UniqueIdentifier>{ac29d404-b7cc-4e1f-bd94-8af13f186646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Memory\Allocators">
+      <UniqueIdentifier>{46620d69-5928-4f69-8202-97c44145255b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\String">
+      <UniqueIdentifier>{20d9de9d-faac-4536-9f74-a70067727463}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\Shared\Memory\Allocators\BaseAllocator.h">
+      <Filter>Header Files\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Allocators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\String\String.h">
+      <Filter>Header Files\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Memory\Allocators\DynamicHeapAllocator.h">
+      <Filter>Header Files\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Strings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Memory\Allocators\FixedAllocator.h">
+      <Filter>Header Files\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Memory\Allocators\FixedHeapAllocator.h">
+      <Filter>Header Files\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\String\StringLib.h">
+      <Filter>Header Files\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\Nil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Shared\System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\Shared\Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Shared\System.Windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
