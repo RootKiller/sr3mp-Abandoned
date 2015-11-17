@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\objects">
+      <UniqueIdentifier>{12119ca4-1725-4e11-be4c-271a01a61538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects">
+      <UniqueIdentifier>{9bef0f05-6ccc-4879-8cf1-3f9eb47169f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\instantiators">
+      <UniqueIdentifier>{8ea55fb9-be1e-4c0a-a130-9320c0951d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\instantiators">
+      <UniqueIdentifier>{262dd13a-e7e1-4009-b2fb-c32f12213f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{06d11114-b903-41e8-860a-144030f04a53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\objects\spawn">
+      <UniqueIdentifier>{d3ffc270-f871-474c-9e88-32c4fa1675c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\objects\ai">
+      <UniqueIdentifier>{98899778-7363-4331-8db1-bad2853a1d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects\spawn">
+      <UniqueIdentifier>{0202140d-9bc4-4e27-a0d9-db888564b532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects\ai">
+      <UniqueIdentifier>{c9c9c3f5-c105-4f7e-bb76-12f0c1641be8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\instantiators\concrete_instantiator.h">
+      <Filter>Header Files\instantiators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\instantiators\object_instantiator.h">
+      <Filter>Header Files\instantiators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\physical_object.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\player.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\resource_object.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\base_object.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ctg_object.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\human.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\vehicle.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\math\vector.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\npc.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\math\matrix.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\math\conversion_helpers.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\spawn_data.h">
+      <Filter>Header Files\objects\spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\npc_spawn_data.h">
+      <Filter>Header Files\objects\spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\vehicle_spawn_data.h">
+      <Filter>Header Files\objects\spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\status_flags.h">
+      <Filter>Header Files\objects\spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\vehicle_model_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ai\human_ai_data.h">
+      <Filter>Header Files\objects\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\object_factory.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\types.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\sr3_world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\player.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\instantiators\concrete_instantiator.cpp">
+      <Filter>Source Files\instantiators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ctg_object.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\base_object.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\vehicle.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\npc.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\spawn_data.cpp">
+      <Filter>Source Files\objects\spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\npc_spawn_data.cpp">
+      <Filter>Source Files\objects\spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\vehicle_spawn_data.cpp">
+      <Filter>Source Files\objects\spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\vehicle_model_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ai\human_ai_data.cpp">
+      <Filter>Source Files\objects\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\object_factory.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\sr3_world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\human.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

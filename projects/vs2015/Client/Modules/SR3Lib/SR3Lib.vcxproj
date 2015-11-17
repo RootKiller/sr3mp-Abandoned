@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\instantiators\concrete_instantiator.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\instantiators\object_instantiator.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\math\conversion_helpers.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\math\matrix.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\math\vector.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ai\human_ai_data.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\base_object.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ctg_object.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\human.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\npc.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\object_factory.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\physical_object.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\player.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\resource_object.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\npc_spawn_data.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\spawn_data.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\status_flags.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\vehicle_spawn_data.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\types.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\vehicle.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\sr3_world.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\SR3Lib\vehicle_model_data.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\instantiators\concrete_instantiator.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ai\human_ai_data.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\base_object.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\ctg_object.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\human.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\npc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\object_factory.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\player.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\npc_spawn_data.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\spawn_data.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\spawn\vehicle_spawn_data.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\objects\vehicle.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\sr3_world.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\SR3Lib\vehicle_model_data.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32F1F9DB-7F29-4E34-87E6-A45AEA175433}</ProjectGuid>
+    <RootNamespace>SR3Lib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\..\..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\..\..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client\Modules\SR3Lib;$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>OS_WINDOWS;DEBUG_BUILD;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client\Modules\SR3Lib;$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>OS_WINDOW;RELEASE_BUILD;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
