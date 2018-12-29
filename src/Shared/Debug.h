@@ -18,6 +18,16 @@ typedef bool(*CustomAssertHandler)(const char *const expression, const char *con
  */
 void SetCustomAssertHandler(CustomAssertHandler *const customAssertHandler);
 
+/**
+ * Spawn debug system console.
+ */
+void SpawnSystemConsole(void);
+
+/**
+ * Kill debug system console.
+ */
+void KillSystemConsole(void);
+
 namespace Detail {
 	void AssertHandler(const char *const expression, const char *const message, const char *const fn, const char *const file, const size_t line);
 } /* namespace Detail */

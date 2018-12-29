@@ -23,6 +23,28 @@ void SetCustomAssertHandler(CustomAssertHandler *const customAssertHandler)
 	g_customAssertHandler = customAssertHandler;
 }
 
+static bool consoleLock = false;
+
+void SpawnSystemConsole(void)
+{
+	ASSERT(!consoleLock);
+#ifdef DEBUG_BUILD
+	AllocConsole();
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONIN$", "r", stdin);
+#endif
+	consoleLock = true;
+}
+
+void KillSystemConsole(void)
+{
+	ASSERT(consoleLock);
+#ifdef DEBUG_BUILD
+	FreeConsole();
+#endif
+	consoleLock = false;
+}
+
 namespace Detail {
 /**
  * Internal assert handler
