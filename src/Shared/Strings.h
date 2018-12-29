@@ -7,7 +7,7 @@
 
 #include "Allocators.h"
 
-#include "Types.h"
+#include "STypes.h"
 
 #include "String/StringLib.h"
 #include "String/String.h"

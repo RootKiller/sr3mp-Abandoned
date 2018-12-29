@@ -23,7 +23,7 @@
     <ClInclude Include="..\..\..\src\Shared\String\String.h" />
     <ClInclude Include="..\..\..\src\Shared\String\StringLib.h" />
     <ClInclude Include="..\..\..\src\Shared\System.h" />
-    <ClInclude Include="..\..\..\src\Shared\Types.h" />
+    <ClInclude Include="..\..\..\src\Shared\STypes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\Shared\Debug.cpp" />

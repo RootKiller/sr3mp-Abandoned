@@ -23,6 +23,8 @@ using uint64	= unsigned long long;
 
 using byte		= uint8;
 
+using address	= unsigned;
+
 #include "Nil.h"
 
 /* EOF */
