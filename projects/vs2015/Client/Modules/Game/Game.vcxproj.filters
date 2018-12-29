@@ -16,15 +16,72 @@
     <Filter Include="Header Files\API">
       <UniqueIdentifier>{779f8db8-f3d1-4d98-8cb5-e5d63684cf38}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Memory">
+      <UniqueIdentifier>{e256fd77-1ea6-49d1-9851-f8135f212899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Memory">
+      <UniqueIdentifier>{5566c352-83ef-4962-911a-6fdcc6a7a10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{7fa7cbcd-7c7a-4b26-80da-e233ecc43905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{f08ee354-74a9-4707-af21-3b4a194bbb87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\API\Entities">
+      <UniqueIdentifier>{8600b9a9-69f6-4313-a4f3-603715c6b4ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\GameDll.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Offsets.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameCharacter.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameLocalCharacter.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Hooks.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameVehicle.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\IGame.h">
       <Filter>Header Files\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Hooks.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Offsets.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\Entities\IGameCharacter.h">
+      <Filter>Header Files\API\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\Entities\IGameEntity.h">
+      <Filter>Header Files\API\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameCharacter.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameLocalCharacter.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\Entities\IGameVehicle.h">
+      <Filter>Header Files\API\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameVehicle.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameEntity.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

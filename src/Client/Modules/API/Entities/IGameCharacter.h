@@ -5,10 +5,11 @@
 
 #pragma once
 
-class IClient
+#include "IGameEntity.h"
+
+class IGameCharacter : public IGameEntity
 {
-public:
-	virtual void Pulse(void) = 0;
+
 };
 
 /* EOF */

@@ -73,7 +73,7 @@ struct SteamWrapper
 
 	bool Init(void)
 	{
-		if(! SteamAPI_IsSteamRunning()) {
+		if (!SteamAPI_IsSteamRunning()) {
 			MessageBox(NULL, "To run Saints Row The Third Multiplayer your Steam client must be running.", "Fatal error", MB_ICONERROR);
 			return false;
 		}
@@ -82,6 +82,7 @@ struct SteamWrapper
 
 		context = new CSteamAPIContext();
 		context->Init();
+		ASSERT(context->SteamApps());
 		return true;
 	}
 

@@ -17,8 +17,6 @@ BOOL WINAPI DllMain(HMODULE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 		case DLL_PROCESS_ATTACH: {
 				DisableThreadLibraryCalls(hinstDLL);
 
-				MessageBoxW(NULL, L"OOO KURWA", L"JA PIERDOLE", MB_ICONHAND);
-
 				g_client = new Client();
 			} break;
 		case DLL_PROCESS_DETACH: {

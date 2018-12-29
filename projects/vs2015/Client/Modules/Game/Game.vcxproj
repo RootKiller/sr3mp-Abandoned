@@ -11,14 +11,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\Entities\IGameCharacter.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\Entities\IGameEntity.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\Entities\IGameVehicle.h" />
     <ClInclude Include="..\..\..\..\..\src\Client\Modules\API\IGame.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameCharacter.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameEntity.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameLocalCharacter.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameVehicle.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Hooks.h" />
+    <ClInclude Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Offsets.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameCharacter.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameLocalCharacter.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Entities\GameVehicle.cpp" />
     <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\GameDll.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Hooks.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\Client\Modules\Game\Memory\Offsets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Shared\Shared.vcxproj">
       <Project>{ad832536-826d-4971-b107-cb0701e31ede}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SR3Lib\SR3Lib.vcxproj">
+      <Project>{32f1f9db-7f29-4e34-87e6-a45aea175433}</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -70,7 +87,7 @@
       <PreprocessorDefinitions>OS_WINDOWS;DEBUG_BUILD;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client\Modules\Game;$(SolutionDir)..\..\src\Client\Modules\SR3Lib;$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -86,7 +103,7 @@
       <PreprocessorDefinitions>OS_WINDOWS;RELEASE_BUILD;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\Client\Modules\Game;$(SolutionDir)..\..\src\Client\Modules\SR3Lib;$(SolutionDir)..\..\src\Client;$(SolutionDir)..\..\src\Shared;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

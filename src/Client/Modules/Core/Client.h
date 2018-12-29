@@ -16,5 +16,7 @@ private:
 public:
 			Client		(void);
 			~Client		(void);
+
+	void	Pulse		(void) override;
 };
 /* EOF */
