@@ -36,7 +36,7 @@ public:
 	}
 
 	// C-String conversion constructor.
-	explicit			String(const CharType *const str)
+						String(const CharType *const str)
 	{
 		const unsigned stringLength = StrLen(str);
 		m_data = m_allocator.Alloc(stringLength + 1);
