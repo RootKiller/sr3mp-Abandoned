@@ -14,6 +14,9 @@
     <ClInclude Include="..\..\..\src\Shared\Allocators.h" />
     <ClInclude Include="..\..\..\src\Shared\Debug.h" />
     <ClInclude Include="..\..\..\src\Shared\Defines.h" />
+    <ClInclude Include="..\..\..\src\Shared\Math\Matrix33.h" />
+    <ClInclude Include="..\..\..\src\Shared\Math\NumericTraits.h" />
+    <ClInclude Include="..\..\..\src\Shared\Math\Vector3.h" />
     <ClInclude Include="..\..\..\src\Shared\Memory\Allocators\BaseAllocator.h" />
     <ClInclude Include="..\..\..\src\Shared\Memory\Allocators\DynamicHeapAllocator.h" />
     <ClInclude Include="..\..\..\src\Shared\Memory\Allocators\FixedAllocator.h" />
